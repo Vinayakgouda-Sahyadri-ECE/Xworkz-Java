@@ -1,14 +1,24 @@
-class PrinterExecutor{
+class PrinterExecutor {
 
-public static void main(String[] args){
+    public static void main(String[] args) {
 
-	boolean value=Printer.onOrOff();
-	System.out.println("The Printer is connected:"+value);
-	
-	
+        boolean on = Printer.controlPrinter();
+        System.out.println("The printer is currently turned On : " + on);
 
+        Printer.increasePrintSpeed();
+        Printer.increasePrintSpeed();
+        Printer.increasePrintSpeed();
+        Printer.increasePrintSpeed();
+        Printer.increasePrintSpeed();
 
-}
+        Printer.decreasePrintSpeed();
+        Printer.decreasePrintSpeed();
+        Printer.decreasePrintSpeed();
+        Printer.decreasePrintSpeed();
+        Printer.decreasePrintSpeed();
 
+        boolean off = Printer.controlPrinter();
+        System.out.println("The printer is currently turned On : " + off);
 
+    }
 }
